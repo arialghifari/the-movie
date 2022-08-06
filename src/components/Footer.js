@@ -1,6 +1,12 @@
 import React from "react";
 
 function Footer() {
+  const getYear = () => {
+    const date = new Date();
+
+    return date.getFullYear();
+  };
+
   return (
     <div className="container py-10 text-zinc-500">
       <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
@@ -28,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-8">
-        © 2022 Movies. Made with ❤ by{" "}
+        © {getYear()} The Movie. Made with ❤ by{" "}
         <a
           href="https://github.com/arialghifari"
           target="_blank"
